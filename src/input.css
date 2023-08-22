@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  @font-face {
+    font-family: "Inter";
+    font-weight: 400;
+    src: url(./MassiveWebsite/assets/font/Inter-Regular.ttf) format('trueType');
+  }
+  @font-face {
+    font-family: "Inter";
+    font-weight: 500;
+    src: url(./MassiveWebsite/assets/font/Inter-Medium.ttf) format('trueType');
+  }
+  @font-face {
+    font-family: "Inter";
+    font-weight: 600;
+    src: url(./MassiveWebsite/assets/font/Inter-SemiBold.ttf) format('trueType');
+  }
+  @font-face {
+    font-family: "Inter";
+    font-weight: 700;
+    src: url(./MassiveWebsite/assets/font/Inter-Bold.ttf) format('trueType');
+  }
+  @font-face {
+    font-family: "Inter";
+    font-weight: 800;
+    src: url(./MassiveWebsite/assets/font/Inter-ExtraBold.ttf) format('trueType');
+  }
+  @font-face {
+    font-family: "Inter";
+    font-weight: 900;
+    src: url(./MassiveWebsite/assets/font/Inter-Black.ttf) format('trueType');
+  }
+}
+
+
+
+
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+}
+
+body{
+  font-family: Inter;
+}
+
+
+.text-red-600{color: #dc2626}
