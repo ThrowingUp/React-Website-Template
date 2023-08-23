@@ -1,5 +1,4 @@
 import React from "react";
-import AppWebsite from "./MassiveWebsite/AppWebsite";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Home, Diensten, OverOns, Blogs, Contact } from "./MassiveWebsite/scenes"
