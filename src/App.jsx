@@ -12,10 +12,9 @@ const App = () => {
       <Routes>
 
         {/* Massive Website */}
-        <Route exact path="/" element={<Home />} />
+        <Route  path="/" element={<Home />} />
         <Route path="/diensten" element={<Diensten />} />
           <Route exact path="/diensten/seo-uitbesteden" element={<Seo />} />
-            <Route />
 
           <Route path="/diensten/sea-uitbesteden" element={<Sea />} />
 

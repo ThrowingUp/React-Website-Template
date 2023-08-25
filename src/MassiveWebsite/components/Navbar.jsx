@@ -10,7 +10,7 @@ import styles from "../styles";
 import { close, logo, menu } from "../assets/img";
 
 const Navbar = () => {
-  const [active, setActive] = useState("Home");
+  const [navbarActive, setNavbarActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const [dienstenDropdown, setDienstenDropdown] = useState(false);
   function handleMouseEnter() {
@@ -26,15 +26,15 @@ const Navbar = () => {
           <NavLink to="/" exact>
             <img src={logo} alt="hoobank" className="w-[54px] h-[33px]" />
           </NavLink>
-          <div>
+          <div className="navbar">
             <ul className="list-none sm:flex hidden justify-end items-center flex-1">
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
                   className={`font-Inter font-normal cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-gray-700" : "text-gray-900"
+                    navbarActive === nav.title ? "text-gray-700" : "text-gray-900"
                   } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-                  onClick={() => setActive(nav.title)}
+                  onClick={() => setNavbarActive(nav.title)}
                 >
                   {nav.title === "Diensten" ? (
                     <div
@@ -93,7 +93,7 @@ const Navbar = () => {
             <ul className="list-none sm:flex hidden justify-end items-center flex-1">
               <li
                 className={`font-Inter font-normal cursor-pointer text-[16px]  mr-10`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => setNavbarActive(nav.title)}
               >
                 <NavLink to="/blog" exact>
                   Blog
@@ -101,7 +101,7 @@ const Navbar = () => {
               </li>
               <li
                 className={`font-Inter font-normal ${styles.flexCenter} cursor-pointer text-[16px] bg-blue-gray-900 text-gray-50 w-[150px] h-[40px] rounded-md`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => setNavbarActive(nav.title)}
               >
                 <NavLink to="/contact" exact>
                   Contact
@@ -130,9 +130,9 @@ const Navbar = () => {
                   <li
                     key={nav.id}
                     className={`font-Inter font-medium cursor-pointer text-[16px] ${
-                      active === nav.title ? " text-white " : "text-dimWhite"
+                      navbarActive === nav.title ? " text-white " : "text-dimWhite"
                     } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                    onClick={() => setActive(nav.title)}
+                    onClick={() => setNavbarActive(nav.title)}
                   >
                     <NavLink to={`${nav.link}`} exact>
                       {nav.title}

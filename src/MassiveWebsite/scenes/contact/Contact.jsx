@@ -2,7 +2,7 @@
 import React from "react";
 
 // components 
-import { Navbar } from "../../components";
+import { ContactForm, Navbar } from "../../components";
 
 
 const Contact = () => {
@@ -10,6 +10,7 @@ const Contact = () => {
     <>
       <Navbar />
       <div>Contact</div>
+      <ContactForm />
     </>
   );
 };
