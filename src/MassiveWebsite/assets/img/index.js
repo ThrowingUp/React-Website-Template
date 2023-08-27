@@ -7,8 +7,18 @@ import desktopComputer from "./desktop-computer.svg"
 import presentationChartLine from "./presentation-chart-line.svg"
 import server from "./server.svg"
 import shoppingCart from "./shopping-cart.svg"
-
-
+import adobeGray from "./adobe-gray.svg"
+import googleAnalyticsGray from "./google-analytics-gray.svg"
+import googleGray from "./google-gray.svg"
+import reactGray from "./react-gray.svg"
+import shopifyGray from "./shopify-gray.svg"
+import vector from "./Vector.svg"
+import wordpressGray from "./wordpress-gray.svg"
+import homeWebshop from "./homeWebshop.svg"
+import logoSmall from "./logoSmall.svg"
+import group94 from "./group94.svg"
+import group94Left from "./group94Left.svg"
+import GridBackground from "./gridBackground.svg"
 
 export {
     close,
@@ -20,4 +30,16 @@ export {
     presentationChartLine,
     server,
     shoppingCart,
+    adobeGray,
+    googleAnalyticsGray,
+    googleGray,
+    reactGray,
+    shopifyGray,
+    vector,
+    wordpressGray,
+    homeWebshop,
+    logoSmall,
+    group94,
+    group94Left,
+    GridBackground
 }

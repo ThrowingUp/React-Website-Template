@@ -1,12 +1,13 @@
 import React from 'react'
 
 // Components 
-import { Navbar } from '../../components'
+import { Navbar, AnnimationRef } from '../../components'
 
 const OverOns = () => {
   return (
     <>
         <Navbar />
+        <AnnimationRef />
         <div>OverOns</div>
     </>
   )

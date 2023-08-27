@@ -6,6 +6,16 @@ export default {
   mode: "jit",
   theme: {
     extend: {
+      padding: {
+        "3.5" : "0.875rem",
+        "13.5" : "3.375rem"
+      },
+      borderRadius: {
+        "4xl" : "32px"
+      },
+      borderWidth: {
+        "1.5" : "1.5px"
+      },
       colors: {
         primary: "#00040f",
         secondary: "#00f6ff",
@@ -29,14 +39,14 @@ export default {
         Inter: ["Inter", "sans-serif"],
       },
     },
-    screens: {
-      xs: "480px",
-      ss: "620px",
-      sm: "768px",
-      md: "1060px",
-      lg: "1200px",
-      xl: "1700px",
-    },
+    // screens: {
+    //   xs: "480px",
+    //   ss: "620px",
+    //   sm: "768px",
+    //   md: "1060px",
+    //   lg: "1200px",
+    //   xl: "1700px",
+    // },
   },
   plugins: [],
 }

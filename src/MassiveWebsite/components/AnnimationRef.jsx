@@ -2,36 +2,38 @@
 // npm install --save @lottiefiles/react-lottie-player
 
 import React, { useEffect, useRef } from "react";
-import animationData from './assets/animations/test.json';
-import { ReactComponent as Logo } from "../../../assets/img/homeWebshop.svg";
+import animationData from '../assets/animations/test.json';
 
 const AnnimationRef = () => {
   const animatedElRef = useRef(null);
   const lottieAnimationRef = useRef(null);
-  const buttonRef = useRef(null); // Ref voor de knop
-  console.log("Seo component wordt gerenderd");
 
+  const elementRef = useRef(null);
+ 
+  // Use Selected Element for Past Scroll
   useEffect(() => {
     if (animatedElRef.current) {
+      // Settings 
       const animation = lottie.loadAnimation({
         container: animatedElRef.current,
         renderer: "svg",
         loop: false,
         autoplay: false,
-        animationData: animationData
+        animationData: animationData,
+        speed: 1
       });
       lottieAnimationRef.current = animation;
     }
 
+      // Play animation when scrolled past element 
     const handleScroll = () => {
-      if (buttonRef.current) {
-        const rect = buttonRef.current.getBoundingClientRect();
-        if (rect.bottom < 0) { // De knop is boven het zichtbare gebied
+      if (elementRef.current) {
+        const rect = elementRef.current.getBoundingClientRect();
+        if (rect.bottom < 0) {
           lottieAnimationRef.current.play();
         }
       }
     };
-
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -39,6 +41,10 @@ const AnnimationRef = () => {
     };
   }, []);
 
+
+
+
+  // Use Button to Play
   const handlePlayClick = () => {
     if (lottieAnimationRef.current) {
       lottieAnimationRef.current.goToAndStop(0, true);// Zet de animatie terug naar het begin
@@ -48,17 +54,11 @@ const AnnimationRef = () => {
 
   return (
     <div>
-      seop
-      <Logo />
-      <div style={{height: 100}}></div>
-      <button ref={buttonRef} onClick={handlePlayClick}>Play me</button>
-      <figure>
-        <div ref={animatedElRef} className="animatedName"></div>
-        <figcaption>
-          <p className="counter">test</p>
-          <p>test1</p>
-        </figcaption>
-      </figure>
+      {/* Button play Animation */}
+      <button ref={elementRef} onClick={handlePlayClick}>Play me</button>
+
+      {/* Canvas for Animation */}
+      <div ref={animatedElRef} className="animatedName"></div>
     </div>
   );
 };
