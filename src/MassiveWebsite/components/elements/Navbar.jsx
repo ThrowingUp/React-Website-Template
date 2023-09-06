@@ -3,11 +3,11 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 // data
-import { navLinks, navLinksDiensten } from "../constants";
+import { navLinks, navLinksDiensten } from "../../constants";
 
 // imports
-import styles from "../styles";
-import { close, logo, menu } from "../assets/img";
+import styles from "../../styles";
+import { close, logo, menu } from "../../assets/img";
 
 const Navbar = () => {
   const [navbarActive, setNavbarActive] = useState("Home");
@@ -16,14 +16,13 @@ const Navbar = () => {
   function handleMouseEnter() {
     setDienstenDropdown(true)
     console.log('hoi')
-    
   }
 
   return (
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <nav className="w-full flex py-6 justify-between items-center navbar">
-          <NavLink to="/" exact>
+          <NavLink to="/" exact="true">
             <img src={logo} alt="hoobank" className="w-[54px] h-[33px]" />
           </NavLink>
           <div className="navbar">
@@ -108,7 +107,6 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-            {/* <p>test</p> */}
           </div>
 
           {/* Mobile menu */}

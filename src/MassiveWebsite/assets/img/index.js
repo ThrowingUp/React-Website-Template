@@ -19,6 +19,11 @@ import logoSmall from "./logoSmall.svg"
 import group94 from "./group94.svg"
 import group94Left from "./group94Left.svg"
 import GridBackground from "./gridBackground.svg"
+import MassiveLogoBlackPurple from "./MassiveLogoBlackPurple.svg"
+import facebookGray from "./facebookGray.svg"
+import twitterGray from "./twitterGray.svg"
+import instagramGray from "./instagramGray.svg"
+import linkedinGray from "./linkedinGray.svg"
 
 export {
     close,
@@ -41,5 +46,11 @@ export {
     logoSmall,
     group94,
     group94Left,
-    GridBackground
+    GridBackground,
+    MassiveLogoBlackPurple,
+    facebookGray,
+    twitterGray,
+    instagramGray,
+    linkedinGray,
+
 }

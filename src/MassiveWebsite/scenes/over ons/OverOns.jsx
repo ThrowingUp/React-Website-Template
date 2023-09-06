@@ -9,6 +9,8 @@ const OverOns = () => {
         <Navbar />
         <AnnimationRef />
         <div>OverOns</div>
+        <CatagoriesServices />
+
     </>
   )
 }

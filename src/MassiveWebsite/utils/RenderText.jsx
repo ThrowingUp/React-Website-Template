@@ -7,7 +7,7 @@ const RenderText = ({ content }) => {
     }
     
     return (
-        <div>
+        <>
             {content.map((item, index) => {
                 if (typeof item === "string") {
                     return <span key={index}>{item}</span>;
@@ -16,7 +16,7 @@ const RenderText = ({ content }) => {
                 }
                 return null;
             })}
-        </div>
+        </>
     );
 };
 
