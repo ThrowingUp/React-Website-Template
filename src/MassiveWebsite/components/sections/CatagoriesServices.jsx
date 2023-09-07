@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 // Import Utilities
-import styles from "../../styles";
+import styles from "../../styles/styles";
 import RenderText from "../../utils/RenderText";
 
 // Import Assets

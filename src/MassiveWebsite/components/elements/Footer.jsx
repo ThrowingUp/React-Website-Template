@@ -5,7 +5,7 @@ import { MassiveLogoBlackPurple } from "../../assets/img";
 import NewsletterSignUp from "./NewsletterSignUp";
 import { footerNavigation } from "../../constants/footerData";
 import RenderText from "../../utils/RenderText";
-import styles from "../../styles";
+import styles from "../../styles/styles";
 
 const Footer = () => {
   return (

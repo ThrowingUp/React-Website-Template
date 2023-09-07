@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import { navLinks, navLinksDiensten } from "../../constants";
 
 // imports
-import styles from "../../styles";
+import styles from "../../styles/styles";
 import { close, logo, menu } from "../../assets/img";
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <nav className="w-full flex py-6 justify-between items-center navbar">
+        <nav className="w-full flex py-6 justify-between items-center navbar px-6 md:px-0">
           <NavLink to="/" exact="true">
             <img src={logo} alt="hoobank" className="w-[54px] h-[33px]" />
           </NavLink>

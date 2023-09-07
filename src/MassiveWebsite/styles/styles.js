@@ -8,6 +8,7 @@ const styles = {
   flexStart: "flex justify-center items-start",
 
   horizontalCenter: "ml-auto mr-auto",
+  horizontalCenterLG: "md:ml-auto md:mr-auto",
   verticalCenter: "mt-auto mb-auto",
 
   paddingX: "sm:px-16 px-3",
@@ -19,9 +20,9 @@ const styles = {
 
   borderInsetWhite: " border-solid border-white border-1.5",
 
-  heading1: " ",
-  heading2: "font-inter text-2xl md:text-4xl leading-7 md:leading-10 font-bold text-gray-700",
-  headingXl: "text-xl leading-7 font-semibold text-gray-700",
+  // heading1: " ",
+  // heading2: "font-inter text-2xl md:text-4xl leading-7 md:leading-10 font-bold text-gray-700",
+  // headingXl: "text-xl leading-7 font-semibold text-gray-700",
 
   textBase: "text-base leading-6 font-medium text-gray-500",
 
@@ -37,6 +38,21 @@ const styles = {
     width: '1px',
     backgroundColor: '#e5e7eb', // This is the color for bg-gray-300 in Tailwind
     height: '100%'`,
+
+
+  heading1: "",
+  heading2: "text-3xl leading-9 font-bold text-secondary-700",
+  heading3: "text-2xl leading-8 font-semibold text-secondary-800",
+
+  subHeading: "text-xs leading-4 font-semibold text-primary-500",
+
+  text: "text-base leading-6 font-medium text-secondary-700",
+  textSmall: "text-xs leading-4 font-normal text-secondary-600", 
+
+  gutter: 'px-6',
+
+  primaryCTA: "w-full md:w-fit bg-primary-500 px-6 py-3 rounded-lg justify-center flex    text-base leading-6 font-semibold text-secondary-50",
+  secondaryCTA: "w-full md:w-fit bg-secondary-50 text-secondary-600 px-6 py-3 rounded-lg justify-center flex border-solid border-white border-1.5 shadow-md   text-base leading-6 font-semibold text-secondary-50",
 };
 
 export const layout = {

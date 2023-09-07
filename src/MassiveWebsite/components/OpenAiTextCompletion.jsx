@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import OpenAI from "openai";
+import parse from "html-react-parser"; // Import the html-react-parser library
 
 const OpenAiTextCompletion = () => {
   const [response, setResponse] = useState(null);
@@ -13,29 +14,25 @@ const OpenAiTextCompletion = () => {
           dangerouslyAllowBrowser: true,
         });
 
-        console.log("request send");
-
         const apiResponse = await openai.chat.completions.create({
-          model: "gpt-3.5-turbo",
+          model: "ft:gpt-3.5-turbo-0613:personal::7vp20Rid",
           messages: [
             {
               role: "user",
               content:
-                // ' You are a marketing researcher that speaks and writes fluent English and in a professional in writing markdown text.\\n            Your task is to generate a detailed USER PERSONA for a small business that want to start with SEO optimalization in The Netherlands [MARKET]. \\n\\n            Structure your response in 4 separate tables.\\n            Above the first table write \\"USER PERSONA [BUSINESS]\\n            and replace [BUSINESS] by small business that want to start with SEO optimalization in The Netherlands\\n           Please output in the following format: ',
-                "hoi"
+                "Create me a persona for medium sized business who is in need of Sustainability solutions in Vancouver, Canada"
             },
           ],
           temperature: 1,
-          max_tokens: 1963,
+          // max_tokens: 1963,
           top_p: 1,
           frequency_penalty: 0,
           presence_penalty: 0,
         });
 
-        console.log("API Response:", apiResponse);
-
         if (apiResponse) {
           const content = apiResponse.choices[0].message.content;
+          console.log("Content", content)
           setResponse(content);
         } else {
           setError("No valid response content found in API response.");
@@ -49,20 +46,27 @@ const OpenAiTextCompletion = () => {
     fetchOpenAIResponse();
   }, []);
 
+  // Function to render the parsed HTML content
+  const renderHtml = () => {
+    if (response) {
+      console.log("responce", response)
+      return parse(response);
+    }
+    return null;
+  };
+
   return (
-    <div>
+    <div className=" w-[70%]">
       {error ? (
         <div>
           <h2>Error:</h2>
           <p>{error}</p>
         </div>
-      ) : response ? (
+      ) : (
         <div>
           <h2>Your OpenAI Response:</h2>
-          <p>{response}</p>
+          {renderHtml()} {/* Render the parsed HTML content */}
         </div>
-      ) : (
-        <p>Loading...</p>
       )}
     </div>
   );
