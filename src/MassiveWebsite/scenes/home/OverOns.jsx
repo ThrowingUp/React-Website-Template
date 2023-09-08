@@ -6,9 +6,9 @@ import { logoSmall, purpleCheckmark } from '../../assets/img'
 
 const OverOns = ({ data = [] }) => {
     return (
-        <section className='py-15'>
-            <img src={data.img} alt={data.alt} className='radial-img-gradient' />
-            <div className={`${styles.gutter} flex flex-col gap-8`}>
+        <section className={`${styles.gutter} ${styles.mdHorizontalCenter} py-15 md:w-full `}>
+            {/* <img src={data.img} alt={data.alt} className='radial-img-gradient md:order-2 md:absolute top-1/2 right-0 transform translate-y-[-50%] md:w-[40%] rotate-[330deg] md:max-w-none' /> */}
+            <div className={` flex flex-col gap-8 md:w-[725px]`}>
                 <div className='flex flex-col gap-4'>
                     <div className="flex text-xs leading-4">
                         <img src={logoSmall} alt="logo" />
@@ -35,9 +35,7 @@ const OverOns = ({ data = [] }) => {
                             </div>
                         ))}
                     </div>
-
                 </div>
-
             </div>
         </section>
     )

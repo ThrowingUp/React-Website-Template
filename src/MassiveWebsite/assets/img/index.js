@@ -30,6 +30,7 @@ import allinone3 from "./allinone3.svg"
 import logoLightGray from "./logoLightGray.svg"
 import homeTelefoon from "./homeTelefoon.png"
 import purpleCheckmark from "./purpleCheckmark.svg"
+import contactIcon from "./contactIcon.svg"
 
 export {
     close,
@@ -63,5 +64,6 @@ export {
     allinone3,
     logoLightGray,
     homeTelefoon,
-    purpleCheckmark
+    purpleCheckmark,
+    contactIcon
 }

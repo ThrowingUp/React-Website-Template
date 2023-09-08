@@ -6,8 +6,8 @@ import styles from "../../styles/styles";
 
 const Hero = ({ data = [] }) => {
     return (
-        <div className="relative mt-12 mb-23">
-            <div className={`${styles.gutter} bg-secondary-50 rounded-4xl border-solid border-white border-3 shadow-lg`}>
+        <div className=" pt-12 mb-23 md:mt-0 md:pt-0">
+            <div className={`${styles.gutter} ${styles.mdHorizontalCenter} md:pt-24`}>
                 <div className="text-center ">
                     <h3 className="text-sm leading-5 font-semibold text-secondary-800 md:text-xl md:leading-7 ">
                         <RenderText content={data[0].subHeading} />
@@ -22,7 +22,7 @@ const Hero = ({ data = [] }) => {
                     </p>
                 </div>
                 <div className=" mt-40 flex flex-col gap-3 md:mt-12 ">
-                    <div className={`flex flex-col gap-3 md:flex-row ${styles.horizontalCenterLG}`}>
+                    <div className={`flex flex-col gap-3 md:flex-row ${styles.mdHorizontalCenter}`}>
                         <div className={`${styles.primaryCTA}`}>
                             <NavLink to={data[0].cta1.link}>
                                 {data[0].cta1.text}
@@ -40,7 +40,7 @@ const Hero = ({ data = [] }) => {
                         </NavLink>
                     </div>
                 </div>
-                <div className="flex gap-8 justify-center mt-20 pb-8 md:justify-start md:pb-12">
+                <div className={`flex gap-8 justify-center mt-20 pb-8 md:justify-start md:pb-12 md:mt-40 `}>
                     {data[0].social.map((item) => (
                         <a
                             key={item.name}
@@ -51,11 +51,8 @@ const Hero = ({ data = [] }) => {
                             <img src={item.icon} alt="" className="w-[24px] h-[24px]"/>
                         </a>
                     ))}
-
                 </div>
             </div>
-            <div className="absolute bottom-[-16px] w-full h-[50%] -z-10 rounded-4xl custom-bg-gradient"></div>
-            <div className="absolute bottom-[-34px] w-full h-full -z-20 bg-secondary-100 rounded-4xl"></div>
         </div>
     );
 };

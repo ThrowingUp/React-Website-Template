@@ -8,8 +8,9 @@ const styles = {
   flexStart: "flex justify-center items-start",
 
   horizontalCenter: "ml-auto mr-auto",
-  horizontalCenterLG: "md:ml-auto md:mr-auto",
+  mdHorizontalCenter: "md:ml-auto md:mr-auto",
   verticalCenter: "mt-auto mb-auto",
+  mdVerticalCenter: "md:mt-auto md:mb-auto",
 
   paddingX: "sm:px-16 px-3",
   paddingY: "sm:py-16 py-3",
@@ -19,6 +20,7 @@ const styles = {
   marginY: "sm:my-16 my-6",
 
   borderInsetWhite: " border-solid border-white border-1.5",
+  borderInsetWhite2: "border-solid border-white border-2",
 
   // heading1: " ",
   // heading2: "font-inter text-2xl md:text-4xl leading-7 md:leading-10 font-bold text-gray-700",
@@ -41,15 +43,15 @@ const styles = {
 
 
   heading1: "",
-  heading2: "text-3xl leading-9 font-bold text-secondary-700",
-  heading3: "text-2xl leading-8 font-semibold text-secondary-800",
+  heading2: "text-3xl leading-9 font-bold text-secondary-700 md:text-5xl md:leading-none",
+  heading3: "text-2xl leading-8 font-semibold text-secondary-800 md:text-5xl md:leading-none",
 
-  subHeading: "text-xs leading-4 font-semibold text-primary-500",
+  subHeading: "text-xs leading-4 font-semibold text-primary-500 md:text-sm md:leading-5",
 
-  text: "text-base leading-6 font-medium text-secondary-700",
-  textSmall: "text-xs leading-4 font-normal text-secondary-600", 
+  text: "text-base leading-6 font-medium text-secondary-700 md:text-lg md:leading-7",
+  textSmall: "text-xs leading-4 font-normal text-secondary-600 md:text-base md:leading-6 md:font-normal", 
 
-  gutter: 'px-6',
+  gutter: 'px-6 md:max-w-[1536px]',
 
   primaryCTA: "w-full md:w-fit bg-primary-500 px-6 py-3 rounded-lg justify-center flex    text-base leading-6 font-semibold text-secondary-50",
   secondaryCTA: "w-full md:w-fit bg-secondary-50 text-secondary-600 px-6 py-3 rounded-lg justify-center flex border-solid border-white border-1.5 shadow-md   text-base leading-6 font-semibold text-secondary-50",

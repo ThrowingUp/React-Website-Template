@@ -42,6 +42,8 @@
 
 body {
   font-family: Inter;
+  overflow-x: hidden;
+  background-color: #F9FAFB ;
 }
 
 .text-red-600 {
@@ -78,7 +80,7 @@ body {
 
 /* set color navbar Active */
 .navbar .active {
-  color: green;
+  color: #a855f7;
 }
 
 /* custom-tooltip.css */
@@ -123,6 +125,17 @@ body {
 }
 
 
+/* overflow hidden */
+.overfolw-hidden{
+  overflow-x: hidden
+}
+
+/* Flip grid row to first row */
+@media (min-width: 1280px){
+  .grid-pos-row-1{
+    grid-row: 1;
+  }
+}
 
 
 
