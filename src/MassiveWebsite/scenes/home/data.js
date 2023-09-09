@@ -1,4 +1,118 @@
-import { adobeGray, googleAnalyticsGray, googleGray, reactGray, shopifyGray, vector, wordpressGray, homeWebshop } from '../../assets/img'
+import { adobeGray, googleAnalyticsGray, googleGray, reactGray, shopifyGray, vector, wordpressGray, homeWebshop, facebookGray, twitterGray, instagramGray, linkedinGray, allinone1, allinone2, allinone3, logoLightGray, homeTelefoon } from '../../assets/img'
+
+export const HeroData = [
+    {
+        subHeading: ["Massive"],
+        heading: ["Online", "Marketing"],
+        text: ["Zet uw zakelijke visie om in tastbare sucessen met strategieën die ondernemerschap en resultaatgerichtheid combineren"],
+        cta1: {
+            text: ["Ontdek onze Diensten"],
+            link: ["/#"]
+        },
+        cta2: {
+            text: ["Start uw Groeireis"],
+            link: ["/#"]
+        },
+        cta3: {
+            text: ["Of neem contact op -->"],
+            link: ["/#"]
+        },
+        social: [
+            {
+              name: 'Facebook',
+              href: '#',
+              icon: facebookGray
+            },
+            {
+              name: 'Twitter',
+              href: '#',
+              icon: twitterGray
+            },
+            {
+              name: 'Instagram',
+              href: '#',
+              icon: instagramGray
+            },
+            {
+              name: 'LinkedIn',
+              href: '#',
+              icon: linkedinGray
+            }
+          ],
+    }
+]
+
+export const AllInOneData = {
+    topText: [
+        {
+            content: "All-in-one",
+            className: "text-gray-800 font-semibold whitespace-nowrap self-center ml-3"
+        },
+        {
+            content: " | ",
+            className: "text-purple-300 font-medium whitespace-nowrap self-center ml-3"
+        },
+        {
+            content: "Online Marketing Bureau",
+            className: "text-gray-600 font-medium ml-3"
+        }
+    ],
+    heading: ["Breng uw onderneming naar het volgende niveau met Massive"],
+    col1: {
+        img: allinone1 ,
+        alt: "hoi",
+        subHeading: ["Marketing"],
+        heading: ["Betere marketing besluiten"],
+        text: ["Met onze data gedreven aanpak verhogen wij uw ROI doormiddel data gedreven marketingstrategieën en web pagina optmalizaties te implementeren."]
+    },
+    col2: {
+        img: allinone2 ,
+        alt: "hoi",
+        subHeading: ["Branding"],
+        heading: ["Versterk uw Merkidentiteit"],
+        text: ["Creëer een blijvende indruk doormiddel van doelgroep anlyses en onze persona-database voor een huisstijl gericht op de behoefte van uw specifieke doelgroep."]
+    },
+    col3: {
+        img: allinone3 ,
+        alt: "hoi",
+        subHeading: ["Content"],
+        heading: ["Verhoog uw positie in Google"],
+        text: ["Vergroot uw online aanwezigheid,  bied waardevolle content die uw doelgroep aantrekt en betrokken houdt dankzij onze statistisch gedreven aanpak."]
+    },
+}
+
+export const VisieData = {
+    logo: logoLightGray,
+    text: ["Onze visie is om de grenzen van traditionele marketing te verleggen om samen met onze partners nieuwe hoogtes te bereiken."]
+}
+
+export const OverOnsData = {
+    img: homeTelefoon,
+    alt: "sag",
+    topText: [
+        {
+            content: "Over ons",
+            className: "text-gray-800 font-semibold whitespace-nowrap self-center ml-3"
+        },
+        {
+            content: " | ",
+            className: "text-purple-300 font-medium whitespace-nowrap self-center ml-3"
+        },
+        {
+            content: "Ondernemers voor Massive",
+            className: "text-gray-600 font-medium ml-3"
+        }
+    ],
+    heading: ["Één oplossing voor jouw Online vindbaarheid"],
+    text: ["Door nauw samen te werken met ondernemers voorzien wij hen van creatieve en datagedreven oplossingen met het streven naar transparantie in alles wat we doen."],
+    cta: [{text: "Lees verder -->", link: "/#"}],
+    tags: [
+        {text: "Unieke aanpak"},
+        {text: "Gedreven door Data"},
+        {text: "Samen naar Succes"},
+        {text: "Transparantie"}
+    ]
+}
 
 export const CatagoriesServecesData = [
     {

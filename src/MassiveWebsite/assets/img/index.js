@@ -24,6 +24,13 @@ import facebookGray from "./facebookGray.svg"
 import twitterGray from "./twitterGray.svg"
 import instagramGray from "./instagramGray.svg"
 import linkedinGray from "./linkedinGray.svg"
+import allinone1 from "./allinone1.svg"
+import allinone2 from "./allinone2.svg"
+import allinone3 from "./allinone3.svg"
+import logoLightGray from "./logoLightGray.svg"
+import homeTelefoon from "./homeTelefoon.png"
+import purpleCheckmark from "./purpleCheckmark.svg"
+import contactIcon from "./contactIcon.svg"
 
 export {
     close,
@@ -52,5 +59,11 @@ export {
     twitterGray,
     instagramGray,
     linkedinGray,
-
+    allinone1,
+    allinone2,
+    allinone3,
+    logoLightGray,
+    homeTelefoon,
+    purpleCheckmark,
+    contactIcon
 }

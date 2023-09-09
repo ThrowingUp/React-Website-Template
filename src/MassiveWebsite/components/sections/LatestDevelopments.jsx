@@ -4,7 +4,7 @@ import ReactDOMServer from "react-dom/server";
 import RenderText from "../../utils/RenderText.jsx";
 import useTooltip from "../../hooks/useTooltip";
 
-import styles from "../../styles";
+import styles from "../../styles/styles.js";
 
 const LatestDevelopments = ({ data = []}) => {
   const getContent = (reference) => {
